@@ -1,0 +1,43 @@
+﻿@page "/"
+@*<h1>Hello, world!</h1>
+
+    Welcome to your new app.
+
+    <SurveyPrompt Title="How is Blazor working for you?" />*@
+
+<Tab>
+    <div class="row">
+        <div class="col-md-3">
+            <TabLink>
+                <TabNavLink Id="tab1" IsActive="true" Name="Tab Link1"></TabNavLink>
+                <TabNavLink Id="tab2" IsActive="false" Name="Tab Link2"></TabNavLink>
+                <TabNavLink Id="tab3" IsActive="false" Name="Tab Link3"></TabNavLink>
+            </TabLink>
+        </div>
+        <div class="col-md-9">
+            <TabContent>
+                <TabPane Title="Hello 1" RefId="tab1" IsActive="true">
+                    <TemplateSection>
+                        <p>
+                            Hello 1
+                        </p>
+                    </TemplateSection>
+                </TabPane>
+                <TabPane Title="Hello 2" RefId="tab2" IsActive="false">
+                    <TemplateSection>
+                        <p>
+                            Hello 2
+                        </p>
+                    </TemplateSection>
+                </TabPane>
+                <TabPane Title="Hello 3" RefId="tab3" IsActive="false">
+                    <TemplateSection>
+                        <p>
+                            Hello 3
+                        </p>
+                    </TemplateSection>
+                </TabPane>
+            </TabContent>
+        </div>
+    </div>
+</Tab>
